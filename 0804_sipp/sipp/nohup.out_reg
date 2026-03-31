@@ -1,0 +1,142 @@
+[0;32m[2025-07-24 10:18:20.893] [INFO] 日志系统初始化完成，错误日志: test_suite/logs/register_test/errors.log[0m
+[0;32m[2025-07-24 10:18:20.894] [INFO] 开始 basic 注册测试...[0m
+[0;32m[2025-07-24 10:18:20.895] [INFO] 所有依赖工具都可用[0m
+[0;32m[2025-07-24 10:18:20.895] [INFO] 验证SIPp场景文件: test_suite/scenarios/ims_register_basic.xml[0m
+[0;33m[2025-07-24 10:18:20.897] [WARNING][log_warning:90] xmllint命令不可用，跳过XML语法检查[0m
+[0;32m[2025-07-24 10:18:20.901] [INFO] 场景文件验证通过[0m
+[0;32m[2025-07-24 10:18:20.904] [INFO] 清理进程...[0m
+[0;32m[2025-07-24 10:18:20.915] [INFO] 清理完成[0m
+[0;32m[2025-07-24 10:18:20.916] [INFO] 创建用户数据CSV文件: test_suite/config/users_0.csv (用户数量: 5000, 认证类型: basic)[0m
+[0;32m[2025-07-24 10:18:45.217] [INFO] 用户数据CSV文件创建完成: test_suite/config/users_0.csv[0m
+[2025-07-24 10:18:45] DEBUG: 启动SIPp实例 0 (端口: 10000, 用户数: 5000, 速率: 1000)
+Resolving remote host '10.18.1.239'... Done.
+[2025-07-24 10:18:46] DEBUG: 警告: 未能获取SIPp进程PID，无法启动资源监控
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call rate (length)   Port   Total-time  Total-calls  Remote-host
+  1000.0(0 ms)/1.000s   10000     32.63 s         5000  10.18.1.239:5060(UDP)
+
+  0 new calls during 0.512 s period       0 ms scheduler resolution            
+  5000 calls (limit 5000)                 Peak was 5000 calls, after 5 s
+  0 Running, 4998 Paused, 39175 Woken up
+  0 dead call msg (discarded)             0 out-of-call msg (discarded)
+  0 requests auto-answered
+  4000 open sockets                       0/0/0 UDP errors (send/recv/cong)
+  0 Total RTP pckts sent                  0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :              [ NOP ]              
+1 :    REGISTER ---------->         30904     0         0                            
+2 :         100 <----------         30904     0         0         0                  
+3 :         200 <----------         30811     0         0         0                  
+4 :       Pause [$refresh_time]     25811                         0        
+5 :              [ NOP ]              
+6 :   SUBSCRIBE ---------->         5000      0         0                            
+7 :         200 <----------         5000      0         0         0                  
+8 :      NOTIFY <----------         5000      0         0         0                  
+9 :         200 ---------->         5000      0                                      
+10:       Pause [   1000ms]         5000                          0        
+11:       Pause [$refresh_time]     5000                          0        
+12:              [ NOP ]              
+13:     OPTIONS <----------         0         0         0         0                  
+14:         200 ---------->         0         0                                      
+15:    REGISTER ---------->         0         0         0                            
+16:         100 <----------         0         0         0         0                  
+17:         200 <----------         0         0         0         0                  
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2025-07-24	10:18:45.224171	1753352325.224171         
+  Last Reset Time        | 2025-07-24	10:19:17.348694	1753352357.348694         
+  Current Time           | 2025-07-24	10:19:17.863933	1753352357.863933         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:515000           | 00:00:00:515000          
+  Call Rate              |    0.000 cps              |  153.191 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        0                 
+  Outgoing calls created |        0                  |     5000                 
+  Total Calls created    |                           |     5000                 
+  Current Calls          |     5000                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |        0                 
+  Failed call            |        0                  |        0                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------
+[0;32m[2025-07-24 10:19:17.880] [INFO] SIPp进程(basic, PID:)正常退出[0m
+[0;32m[2025-07-24 10:19:17.881] [INFO] 生成错误统计报告: /home/sder/work/sipp/test_suite/logs/error_stats_report.html[0m
+[0;32m[2025-07-24 10:19:17.885] [INFO] 错误报告已生成: /home/sder/work/sipp/test_suite/logs/error_stats_report.html[0m
+[0;32m[2025-07-24 10:19:17.886] [INFO] 注册测试完成，退出状态: 0[0m
+[0;32m[2025-07-24 10:19:17.886] [INFO] 清理进程...[0m
+[0;32m[2025-07-24 10:19:17.900] [INFO] 清理完成[0m
+[0;32m[2025-07-24 10:19:26.187] [INFO] 日志系统初始化完成，错误日志: test_suite/logs/register_test/errors.log[0m
+[0;32m[2025-07-24 10:19:26.188] [INFO] 开始 basic 注册测试...[0m
+[0;32m[2025-07-24 10:19:26.188] [INFO] 所有依赖工具都可用[0m
+[0;32m[2025-07-24 10:19:26.189] [INFO] 验证SIPp场景文件: test_suite/scenarios/ims_register_basic.xml[0m
+[0;33m[2025-07-24 10:19:26.191] [WARNING][log_warning:90] xmllint命令不可用，跳过XML语法检查[0m
+[0;32m[2025-07-24 10:19:26.194] [INFO] 场景文件验证通过[0m
+[0;32m[2025-07-24 10:19:26.197] [INFO] 清理进程...[0m
+[0;32m[2025-07-24 10:19:26.208] [INFO] 清理完成[0m
+[0;32m[2025-07-24 10:19:26.209] [INFO] 创建用户数据CSV文件: test_suite/config/users_0.csv (用户数量: 5000, 认证类型: basic)[0m
+[0;32m[2025-07-24 10:19:50.255] [INFO] 用户数据CSV文件创建完成: test_suite/config/users_0.csv[0m
+[2025-07-24 10:19:50] DEBUG: 启动SIPp实例 0 (端口: 10000, 用户数: 5000, 速率: 1000)
+Resolving remote host '10.18.1.239'... Done.
+[2025-07-24 10:19:51] DEBUG: 警告: 未能获取SIPp进程PID，无法启动资源监控
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call rate (length)   Port   Total-time  Total-calls  Remote-host
+  1000.0(0 ms)/1.000s   10000  54236.35 s      5190000  10.18.1.239:5060(UDP)
+
+  0 new calls during 0.940 s period       0 ms scheduler resolution            
+  5000 calls (limit 5000)                 Peak was 5000 calls, after 5 s
+  0 Running, 7370 Paused, 72605860 Woken up
+  0 dead call msg (discarded)             0 out-of-call msg (discarded)
+  0 requests auto-answered
+  4000 open sockets                       0/0/0 UDP errors (send/recv/cong)
+  0 Total RTP pckts sent                  0.000 last period RTP rate (kB/s)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :              [ NOP ]              
+1 :    REGISTER ---------->         51885194  24        0                            
+2 :         100 <----------         51885173  17        0         0                  
+3 :         200 <----------         51885060  0         0         0                  
+4 :       Pause [$refresh_time]     46695060                      0        
+5 :              [ NOP ]              
+6 :   SUBSCRIBE ---------->         5190000   5         0                            
+7 :         200 <----------         5190000   0         0         0                  
+8 :      NOTIFY <----------         5190000   9         0         0                  
+9 :         200 ---------->         5190000   9                                      
+10:       Pause [   1000ms]         5190000                       0        
+11:       Pause [$refresh_time]     5190000                       0        
+12:              [ NOP ]              
+13:     OPTIONS <----------         0         0         0         0                  
+14:         200 ---------->         0         0                                      
+15:    REGISTER ---------->         5185000   0         0                            
+16:         100 <----------         5185000   0         0         0                  
+17:         200 <----------         5185000   0         0         0                  
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2025-07-24	10:19:50.261703	1753352390.261703         
+  Last Reset Time        | 2025-07-25	01:23:45.672214	1753406625.672214         
+  Current Time           | 2025-07-25	01:23:46.614834	1753406626.614834         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:942000           | 00:00:00:942000          
+  Call Rate              |    0.000 cps              |   95.692 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        0                 
+  Outgoing calls created |        0                  |  5190000                 
+  Total Calls created    |                           |  5190000                 
+  Current Calls          |     5000                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |  5185000                 
+  Failed call            |        0                  |        0                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------
+[0;32m[2025-07-25 01:23:46.634] [INFO] SIPp进程(basic, PID:)正常退出[0m
+[0;32m[2025-07-25 01:23:46.635] [INFO] 生成错误统计报告: /home/sder/work/sipp/test_suite/logs/error_stats_report.html[0m
+[0;32m[2025-07-25 01:23:46.639] [INFO] 错误报告已生成: /home/sder/work/sipp/test_suite/logs/error_stats_report.html[0m
+[0;32m[2025-07-25 01:23:46.640] [INFO] 注册测试完成，退出状态: 0[0m
+[0;32m[2025-07-25 01:23:46.641] [INFO] 清理进程...[0m
+[0;32m[2025-07-25 01:23:46.652] [INFO] 清理完成[0m

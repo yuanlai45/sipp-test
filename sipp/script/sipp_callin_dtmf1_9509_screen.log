@@ -1,0 +1,65 @@
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Timestamp: Wed Oct 19 11:08:32 2022
+
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+ 100.0(0 ms)/1.000s   4051     414.48 s        38835  172.17.95.179:15080(UDP)
+
+  0 new calls during 0.000 s period      0 ms scheduler resolution
+  0 calls (limit 4000)                   Peak was 3510 calls, after 238 s
+  0 Running, 3231 Paused, 0 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  1 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         38835     0         0                  
+         100 <----------         38835     0         0         0        
+         180 <----------         0         0         0         0        
+         183 <----------         38835     0         0         0        
+         403 <----------         0         0         0         0        
+         200 <----------         38835     0         0         0        
+         ACK ---------->         38835     0                            
+       Pause [   1000ms]         38835                         0        
+        INFO ---------->         38835     0         0                  
+         200 <----------         38835     0         0         0        
+
+       Pause [    30.0s]         38835                         136      
+         BYE ---------->         38699     0         0                  
+         200 <----------         38699     0         0         0        
+
+       Pause [   1000ms]         38699                         0        
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2022-10-19	11:01:38.160305	1666148498.160305         
+  Last Reset Time        | 2022-10-19	11:08:32.642764	1666148912.642764         
+  Current Time           | 2022-10-19	11:08:32.642809	1666148912.642809         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:000000           | 00:06:54:482000          
+  Call Rate              |    0.000 cps              |   93.695 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming call created  |        0                  |        0                 
+  OutGoing call created  |        0                  |    38835                 
+  Total Call created     |                           |    38835                 
+  Current Call           |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |    38699                 
+  Failed call            |        0                  |      136                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:32:487000          
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+
+---------------------------- Repartition Screen ------- [1-9]: Change Screen --
+    <No repartion defined>                                                      
+  Average Call Length Repartition                                               
+           0 ms <= n <        10 ms :          0                                
+          10 ms <= n <        50 ms :          0                                
+          50 ms <= n <       100 ms :          0                                
+         100 ms <= n <       500 ms :          0                                
+         500 ms <= n <      1000 ms :          0                                
+        1000 ms <= n <      5000 ms :         82                                
+        5000 ms <= n <     10000 ms :         52                                
+                   n >=    10000 ms :      38701                                
+------- Waiting for active calls to end. Press [q] again to force exit. -------
+

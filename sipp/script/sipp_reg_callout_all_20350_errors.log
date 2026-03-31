@@ -1,0 +1,1633 @@
+sipp: The following events occured:
+2022-10-16	12:05:25.229513	1665893125.229513: Aborting call on unexpected message for Call-Id '2-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31500 <sip:31500@172.17.95.181:15060>;tag=2
+To: 31500 <sip:31500@172.17.95.181:15060>;tag=5DteS7QrFZa1c
+Call-ID: 2-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.229871	1665893125.229871: Dead call 2-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-2--1
+From: 31500 <sip:31500@172.17.95.181:15060>;tag=2
+To: 31500 <sip:31500@172.17.95.181:15060>;tag=5DteS7QrFZa1c
+Call-ID: 2-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.347663	1665893125.347663: Aborting call on unexpected message for Call-Id '4-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31501 <sip:31501@172.17.95.181:15060>;tag=4
+To: 31501 <sip:31501@172.17.95.181:15060>;tag=aUra2eca1Btyp
+Call-ID: 4-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.347903	1665893125.347903: Dead call 4-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-4--1
+From: 31501 <sip:31501@172.17.95.181:15060>;tag=4
+To: 31501 <sip:31501@172.17.95.181:15060>;tag=aUra2eca1Btyp
+Call-ID: 4-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.463384	1665893125.463384: Aborting call on unexpected message for Call-Id '6-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31502 <sip:31502@172.17.95.181:15060>;tag=6
+To: 31502 <sip:31502@172.17.95.181:15060>;tag=F8p6ap0Ujr9Ug
+Call-ID: 6-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.463625	1665893125.463625: Dead call 6-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-6--1
+From: 31502 <sip:31502@172.17.95.181:15060>;tag=6
+To: 31502 <sip:31502@172.17.95.181:15060>;tag=F8p6ap0Ujr9Ug
+Call-ID: 6-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.581115	1665893125.581115: Aborting call on unexpected message for Call-Id '8-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31503 <sip:31503@172.17.95.181:15060>;tag=8
+To: 31503 <sip:31503@172.17.95.181:15060>;tag=mNN2KXmD44rSa
+Call-ID: 8-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.581353	1665893125.581353: Dead call 8-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-8--1
+From: 31503 <sip:31503@172.17.95.181:15060>;tag=8
+To: 31503 <sip:31503@172.17.95.181:15060>;tag=mNN2KXmD44rSa
+Call-ID: 8-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.698840	1665893125.698840: Aborting call on unexpected message for Call-Id '10-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31504 <sip:31504@172.17.95.181:15060>;tag=10
+To: 31504 <sip:31504@172.17.95.181:15060>;tag=S2Kyv48yNH8pm
+Call-ID: 10-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.699078	1665893125.699078: Dead call 10-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-10--1
+From: 31504 <sip:31504@172.17.95.181:15060>;tag=10
+To: 31504 <sip:31504@172.17.95.181:15060>;tag=S2Kyv48yNH8pm
+Call-ID: 10-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.815601	1665893125.815601: Aborting call on unexpected message for Call-Id '12-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31505 <sip:31505@172.17.95.181:15060>;tag=12
+To: 31505 <sip:31505@172.17.95.181:15060>;tag=yFjt5BXg7XQme
+Call-ID: 12-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.815827	1665893125.815827: Dead call 12-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-12--1
+From: 31505 <sip:31505@172.17.95.181:15060>;tag=12
+To: 31505 <sip:31505@172.17.95.181:15060>;tag=yFjt5BXg7XQme
+Call-ID: 12-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.935599	1665893125.935599: Aborting call on unexpected message for Call-Id '14-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31506 <sip:31506@172.17.95.181:15060>;tag=14
+To: 31506 <sip:31506@172.17.95.181:15060>;tag=3vgpeKH2ra7Hr
+Call-ID: 14-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:25.935824	1665893125.935824: Dead call 14-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-14--1
+From: 31506 <sip:31506@172.17.95.181:15060>;tag=14
+To: 31506 <sip:31506@172.17.95.181:15060>;tag=3vgpeKH2ra7Hr
+Call-ID: 14-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.052565	1665893126.052565: Aborting call on unexpected message for Call-Id '16-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31507 <sip:31507@172.17.95.181:15060>;tag=16
+To: 31507 <sip:31507@172.17.95.181:15060>;tag=89ejQt5KaQpFj
+Call-ID: 16-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.052790	1665893126.052790: Dead call 16-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-16--1
+From: 31507 <sip:31507@172.17.95.181:15060>;tag=16
+To: 31507 <sip:31507@172.17.95.181:15060>;tag=89ejQt5KaQpFj
+Call-ID: 16-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.168907	1665893126.168907: Aborting call on unexpected message for Call-Id '18-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31508 <sip:31508@172.17.95.181:15060>;tag=18
+To: 31508 <sip:31508@172.17.95.181:15060>;tag=DQDe01S5U35cc
+Call-ID: 18-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.169151	1665893126.169151: Dead call 18-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-18--1
+From: 31508 <sip:31508@172.17.95.181:15060>;tag=18
+To: 31508 <sip:31508@172.17.95.181:15060>;tag=DQDe01S5U35cc
+Call-ID: 18-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.287971	1665893126.287971: Aborting call on unexpected message for Call-Id '20-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31509 <sip:31509@172.17.95.181:15060>;tag=20
+To: 31509 <sip:31509@172.17.95.181:15060>;tag=j4Ba98DQDgNap
+Call-ID: 20-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.288200	1665893126.288200: Dead call 20-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-20--1
+From: 31509 <sip:31509@172.17.95.181:15060>;tag=20
+To: 31509 <sip:31509@172.17.95.181:15060>;tag=j4Ba98DQDgNap
+Call-ID: 20-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.405060	1665893126.405060: Aborting call on unexpected message for Call-Id '22-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31510 <sip:31510@172.17.95.181:15060>;tag=22
+To: 31510 <sip:31510@172.17.95.181:15060>;tag=QHa6Hg28yv47F
+Call-ID: 22-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.405300	1665893126.405300: Dead call 22-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-22--1
+From: 31510 <sip:31510@172.17.95.181:15060>;tag=22
+To: 31510 <sip:31510@172.17.95.181:15060>;tag=QHa6Hg28yv47F
+Call-ID: 22-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.522933	1665893126.522933: Aborting call on unexpected message for Call-Id '24-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31511 <sip:31511@172.17.95.181:15060>;tag=24
+To: 31511 <sip:31511@172.17.95.181:15060>;tag=vy81tQptg9K5S
+Call-ID: 24-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.523156	1665893126.523156: Dead call 24-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-24--1
+From: 31511 <sip:31511@172.17.95.181:15060>;tag=24
+To: 31511 <sip:31511@172.17.95.181:15060>;tag=vy81tQptg9K5S
+Call-ID: 24-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.639935	1665893126.639935: Aborting call on unexpected message for Call-Id '26-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31512 <sip:31512@172.17.95.181:15060>;tag=26
+To: 31512 <sip:31512@172.17.95.181:15060>;tag=1B7X3yac2N32K
+Call-ID: 26-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.640160	1665893126.640160: Dead call 26-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-26--1
+From: 31512 <sip:31512@172.17.95.181:15060>;tag=26
+To: 31512 <sip:31512@172.17.95.181:15060>;tag=1B7X3yac2N32K
+Call-ID: 26-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.757750	1665893126.757750: Aborting call on unexpected message for Call-Id '28-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31513 <sip:31513@172.17.95.181:15060>;tag=28
+To: 31513 <sip:31513@172.17.95.181:15060>;tag=6r5Sc6yXK2j0D
+Call-ID: 28-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.757977	1665893126.757977: Dead call 28-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-28--1
+From: 31513 <sip:31513@172.17.95.181:15060>;tag=28
+To: 31513 <sip:31513@172.17.95.181:15060>;tag=6r5Sc6yXK2j0D
+Call-ID: 28-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.875642	1665893126.875642: Aborting call on unexpected message for Call-Id '30-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31514 <sip:31514@172.17.95.181:15060>;tag=30
+To: 31514 <sip:31514@172.17.95.181:15060>;tag=B63NNDKF5e2XQ
+Call-ID: 30-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.875884	1665893126.875884: Dead call 30-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-30--1
+From: 31514 <sip:31514@172.17.95.181:15060>;tag=30
+To: 31514 <sip:31514@172.17.95.181:15060>;tag=B63NNDKF5e2XQ
+Call-ID: 30-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.993700	1665893126.993700: Aborting call on unexpected message for Call-Id '32-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31515 <sip:31515@172.17.95.181:15060>;tag=32
+To: 31515 <sip:31515@172.17.95.181:15060>;tag=gK2Hym70pUHUH
+Call-ID: 32-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:26.993933	1665893126.993933: Dead call 32-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-32--1
+From: 31515 <sip:31515@172.17.95.181:15060>;tag=32
+To: 31515 <sip:31515@172.17.95.181:15060>;tag=gK2Hym70pUHUH
+Call-ID: 32-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.109991	1665893127.109991: Aborting call on unexpected message for Call-Id '34-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31516 <sip:31516@172.17.95.181:15060>;tag=34
+To: 31516 <sip:31516@172.17.95.181:15060>;tag=N00D7UUj870rB
+Call-ID: 34-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.110231	1665893127.110231: Dead call 34-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-34--1
+From: 31516 <sip:31516@172.17.95.181:15060>;tag=34
+To: 31516 <sip:31516@172.17.95.181:15060>;tag=N00D7UUj870rB
+Call-ID: 34-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.228505	1665893127.228505: Aborting call on unexpected message for Call-Id '36-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31517 <sip:31517@172.17.95.181:15060>;tag=36
+To: 31517 <sip:31517@172.17.95.181:15060>;tag=tDZ9F3F4SmgpN
+Call-ID: 36-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.228750	1665893127.228750: Dead call 36-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-36--1
+From: 31517 <sip:31517@172.17.95.181:15060>;tag=36
+To: 31517 <sip:31517@172.17.95.181:15060>;tag=tDZ9F3F4SmgpN
+Call-ID: 36-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.346553	1665893127.346553: Aborting call on unexpected message for Call-Id '38-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31518 <sip:31518@172.17.95.181:15060>;tag=38
+To: 31518 <sip:31518@172.17.95.181:15060>;tag=ZtX5ra4NB1ZKF
+Call-ID: 38-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.346807	1665893127.346807: Dead call 38-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-38--1
+From: 31518 <sip:31518@172.17.95.181:15060>;tag=38
+To: 31518 <sip:31518@172.17.95.181:15060>;tag=ZtX5ra4NB1ZKF
+Call-ID: 38-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.463722	1665893127.463722: Aborting call on unexpected message for Call-Id '40-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31519 <sip:31519@172.17.95.181:15060>;tag=40
+To: 31519 <sip:31519@172.17.95.181:15060>;tag=47U11Hr7vDFHS
+Call-ID: 40-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.463962	1665893127.463962: Dead call 40-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-40--1
+From: 31519 <sip:31519@172.17.95.181:15060>;tag=40
+To: 31519 <sip:31519@172.17.95.181:15060>;tag=47U11Hr7vDFHS
+Call-ID: 40-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.581963	1665893127.581963: Aborting call on unexpected message for Call-Id '42-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31520 <sip:31520@172.17.95.181:15060>;tag=42
+To: 31520 <sip:31520@172.17.95.181:15060>;tag=9mtXaScSetyeK
+Call-ID: 42-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.582202	1665893127.582202: Dead call 42-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-42--1
+From: 31520 <sip:31520@172.17.95.181:15060>;tag=42
+To: 31520 <sip:31520@172.17.95.181:15060>;tag=9mtXaScSetyeK
+Call-ID: 42-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.698987	1665893127.698987: Aborting call on unexpected message for Call-Id '44-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31521 <sip:31521@172.17.95.181:15060>;tag=44
+To: 31521 <sip:31521@172.17.95.181:15060>;tag=e2rSK00a06DcD
+Call-ID: 44-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.699205	1665893127.699205: Dead call 44-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-44--1
+From: 31521 <sip:31521@172.17.95.181:15060>;tag=44
+To: 31521 <sip:31521@172.17.95.181:15060>;tag=e2rSK00a06DcD
+Call-ID: 44-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.816035	1665893127.816035: Aborting call on unexpected message for Call-Id '46-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31522 <sip:31522@172.17.95.181:15060>;tag=46
+To: 31522 <sip:31522@172.17.95.181:15060>;tag=KFQNv7mvHKX9p
+Call-ID: 46-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.816267	1665893127.816267: Dead call 46-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-46--1
+From: 31522 <sip:31522@172.17.95.181:15060>;tag=46
+To: 31522 <sip:31522@172.17.95.181:15060>;tag=KFQNv7mvHKX9p
+Call-ID: 46-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.934043	1665893127.934043: Aborting call on unexpected message for Call-Id '48-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31523 <sip:31523@172.17.95.181:15060>;tag=48
+To: 31523 <sip:31523@172.17.95.181:15060>;tag=rvNH5e9D3Zc7g
+Call-ID: 48-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:27.934268	1665893127.934268: Dead call 48-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-48--1
+From: 31523 <sip:31523@172.17.95.181:15060>;tag=48
+To: 31523 <sip:31523@172.17.95.181:15060>;tag=rvNH5e9D3Zc7g
+Call-ID: 48-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.053142	1665893128.053142: Aborting call on unexpected message for Call-Id '50-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31524 <sip:31524@172.17.95.181:15060>;tag=50
+To: 31524 <sip:31524@172.17.95.181:15060>;tag=X9KDepXZmcv4a
+Call-ID: 50-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.053372	1665893128.053372: Dead call 50-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-50--1
+From: 31524 <sip:31524@172.17.95.181:15060>;tag=50
+To: 31524 <sip:31524@172.17.95.181:15060>;tag=X9KDepXZmcv4a
+Call-ID: 50-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.169892	1665893128.169892: Aborting call on unexpected message for Call-Id '52-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31525 <sip:31525@172.17.95.181:15060>;tag=52
+To: 31525 <sip:31525@172.17.95.181:15060>;tag=2pj9pXHH6rB2m
+Call-ID: 52-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.170136	1665893128.170136: Dead call 52-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-52--1
+From: 31525 <sip:31525@172.17.95.181:15060>;tag=52
+To: 31525 <sip:31525@172.17.95.181:15060>;tag=2pj9pXHH6rB2m
+Call-ID: 52-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.287030	1665893128.287030: Aborting call on unexpected message for Call-Id '54-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31526 <sip:31526@172.17.95.181:15060>;tag=54
+To: 31526 <sip:31526@172.17.95.181:15060>;tag=73g5Z452Q5tZe
+Call-ID: 54-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.287265	1665893128.287265: Dead call 54-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-54--1
+From: 31526 <sip:31526@172.17.95.181:15060>;tag=54
+To: 31526 <sip:31526@172.17.95.181:15060>;tag=73g5Z452Q5tZe
+Call-ID: 54-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.405065	1665893128.405065: Aborting call on unexpected message for Call-Id '56-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31527 <sip:31527@172.17.95.181:15060>;tag=56
+To: 31527 <sip:31527@172.17.95.181:15060>;tag=cHF18Btm9HaXr
+Call-ID: 56-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.405287	1665893128.405287: Dead call 56-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-56--1
+From: 31527 <sip:31527@172.17.95.181:15060>;tag=56
+To: 31527 <sip:31527@172.17.95.181:15060>;tag=cHF18Btm9HaXr
+Call-ID: 56-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.522081	1665893128.522081: Aborting call on unexpected message for Call-Id '58-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31528 <sip:31528@172.17.95.181:15060>;tag=58
+To: 31528 <sip:31528@172.17.95.181:15060>;tag=HyDXHKe6tyStj
+Call-ID: 58-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.522307	1665893128.522307: Dead call 58-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-58--1
+From: 31528 <sip:31528@172.17.95.181:15060>;tag=58
+To: 31528 <sip:31528@172.17.95.181:15060>;tag=HyDXHKe6tyStj
+Call-ID: 58-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.641139	1665893128.641139: Aborting call on unexpected message for Call-Id '60-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31529 <sip:31529@172.17.95.181:15060>;tag=60
+To: 31529 <sip:31529@172.17.95.181:15060>;tag=pBcStt2QcB9Qc
+Call-ID: 60-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.641351	1665893128.641351: Dead call 60-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-60--1
+From: 31529 <sip:31529@172.17.95.181:15060>;tag=60
+To: 31529 <sip:31529@172.17.95.181:15060>;tag=pBcStt2QcB9Qc
+Call-ID: 60-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.758160	1665893128.758160: Aborting call on unexpected message for Call-Id '62-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31530 <sip:31530@172.17.95.181:15060>;tag=62
+To: 31530 <sip:31530@172.17.95.181:15060>;tag=UraN31p9XQrNp
+Call-ID: 62-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.758388	1665893128.758388: Dead call 62-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-62--1
+From: 31530 <sip:31530@172.17.95.181:15060>;tag=62
+To: 31530 <sip:31530@172.17.95.181:15060>;tag=UraN31p9XQrNp
+Call-ID: 62-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.875096	1665893128.875096: Aborting call on unexpected message for Call-Id '64-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31531 <sip:31531@172.17.95.181:15060>;tag=64
+To: 31531 <sip:31531@172.17.95.181:15060>;tag=058gc9aUF47jg
+Call-ID: 64-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.875320	1665893128.875320: Dead call 64-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-64--1
+From: 31531 <sip:31531@172.17.95.181:15060>;tag=64
+To: 31531 <sip:31531@172.17.95.181:15060>;tag=058gc9aUF47jg
+Call-ID: 64-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.993239	1665893128.993239: Aborting call on unexpected message for Call-Id '66-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31532 <sip:31532@172.17.95.181:15060>;tag=66
+To: 31532 <sip:31532@172.17.95.181:15060>;tag=5j7cNgZc1gQga
+Call-ID: 66-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:28.993457	1665893128.993457: Dead call 66-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-66--1
+From: 31532 <sip:31532@172.17.95.181:15060>;tag=66
+To: 31532 <sip:31532@172.17.95.181:15060>;tag=5j7cNgZc1gQga
+Call-ID: 66-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.111728	1665893129.111728: Aborting call on unexpected message for Call-Id '68-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31533 <sip:31533@172.17.95.181:15060>;tag=68
+To: 31533 <sip:31533@172.17.95.181:15060>;tag=a058XQKyjX6Dm
+Call-ID: 68-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.111968	1665893129.111968: Dead call 68-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-68--1
+From: 31533 <sip:31533@172.17.95.181:15060>;tag=68
+To: 31533 <sip:31533@172.17.95.181:15060>;tag=a058XQKyjX6Dm
+Call-ID: 68-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.228283	1665893129.228283: Aborting call on unexpected message for Call-Id '70-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31534 <sip:31534@172.17.95.181:15060>;tag=70
+To: 31534 <sip:31534@172.17.95.181:15060>;tag=FD446y7F49NBe
+Call-ID: 70-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.228534	1665893129.228534: Dead call 70-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-70--1
+From: 31534 <sip:31534@172.17.95.181:15060>;tag=70
+To: 31534 <sip:31534@172.17.95.181:15060>;tag=FD446y7F49NBe
+Call-ID: 70-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.347665	1665893129.347665: Aborting call on unexpected message for Call-Id '72-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31535 <sip:31535@172.17.95.181:15060>;tag=72
+To: 31535 <sip:31535@172.17.95.181:15060>;tag=mt20F6U1Np58Q
+Call-ID: 72-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.347890	1665893129.347890: Dead call 72-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-72--1
+From: 31535 <sip:31535@172.17.95.181:15060>;tag=72
+To: 31535 <sip:31535@172.17.95.181:15060>;tag=mt20F6U1Np58Q
+Call-ID: 72-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.463724	1665893129.463724: Aborting call on unexpected message for Call-Id '74-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31536 <sip:31536@172.17.95.181:15060>;tag=74
+To: 31536 <sip:31536@172.17.95.181:15060>;tag=S70vrDgK72m6H
+Call-ID: 74-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.463950	1665893129.463950: Dead call 74-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-74--1
+From: 31536 <sip:31536@172.17.95.181:15060>;tag=74
+To: 31536 <sip:31536@172.17.95.181:15060>;tag=S70vrDgK72m6H
+Call-ID: 74-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.581926	1665893129.581926: Aborting call on unexpected message for Call-Id '76-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31537 <sip:31537@172.17.95.181:15060>;tag=76
+To: 31537 <sip:31537@172.17.95.181:15060>;tag=ymZr1m44rF43B
+Call-ID: 76-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.582177	1665893129.582177: Dead call 76-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-76--1
+From: 31537 <sip:31537@172.17.95.181:15060>;tag=76
+To: 31537 <sip:31537@172.17.95.181:15060>;tag=ymZr1m44rF43B
+Call-ID: 76-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.700064	1665893129.700064: Aborting call on unexpected message for Call-Id '78-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31538 <sip:31538@172.17.95.181:15060>;tag=78
+To: 31538 <sip:31538@172.17.95.181:15060>;tag=31XmavrpavK1N
+Call-ID: 78-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.700275	1665893129.700275: Dead call 78-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-78--1
+From: 31538 <sip:31538@172.17.95.181:15060>;tag=78
+To: 31538 <sip:31538@172.17.95.181:15060>;tag=31XmavrpavK1N
+Call-ID: 78-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.817052	1665893129.817052: Aborting call on unexpected message for Call-Id '80-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31539 <sip:31539@172.17.95.181:15060>;tag=80
+To: 31539 <sip:31539@172.17.95.181:15060>;tag=8evgK3c8U82yF
+Call-ID: 80-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.817273	1665893129.817273: Dead call 80-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-80--1
+From: 31539 <sip:31539@172.17.95.181:15060>;tag=80
+To: 31539 <sip:31539@172.17.95.181:15060>;tag=8evgK3c8U82yF
+Call-ID: 80-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.935226	1665893129.935226: Aborting call on unexpected message for Call-Id '82-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31540 <sip:31540@172.17.95.181:15060>;tag=82
+To: 31540 <sip:31540@172.17.95.181:15060>;tag=Dvtcva1SDNjvS
+Call-ID: 82-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:29.935453	1665893129.935453: Dead call 82-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-82--1
+From: 31540 <sip:31540@172.17.95.181:15060>;tag=82
+To: 31540 <sip:31540@172.17.95.181:15060>;tag=Dvtcva1SDNjvS
+Call-ID: 82-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.053437	1665893130.053437: Aborting call on unexpected message for Call-Id '84-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31541 <sip:31541@172.17.95.181:15060>;tag=84
+To: 31541 <sip:31541@172.17.95.181:15060>;tag=j9r84HNBZ11SK
+Call-ID: 84-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.053664	1665893130.053664: Dead call 84-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-84--1
+From: 31541 <sip:31541@172.17.95.181:15060>;tag=84
+To: 31541 <sip:31541@172.17.95.181:15060>;tag=j9r84HNBZ11SK
+Call-ID: 84-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.168961	1665893130.168961: Aborting call on unexpected message for Call-Id '86-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31542 <sip:31542@172.17.95.181:15060>;tag=86
+To: 31542 <sip:31542@172.17.95.181:15060>;tag=QpQ4DS9vgeHQD
+Call-ID: 86-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.169204	1665893130.169204: Dead call 86-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-86--1
+From: 31542 <sip:31542@172.17.95.181:15060>;tag=86
+To: 31542 <sip:31542@172.17.95.181:15060>;tag=QpQ4DS9vgeHQD
+Call-ID: 86-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.288089	1665893130.288089: Aborting call on unexpected message for Call-Id '88-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31543 <sip:31543@172.17.95.181:15060>;tag=88
+To: 31543 <sip:31543@172.17.95.181:15060>;tag=v3N0p0Xe2t0mQ
+Call-ID: 88-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.288320	1665893130.288320: Dead call 88-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-88--1
+From: 31543 <sip:31543@172.17.95.181:15060>;tag=88
+To: 31543 <sip:31543@172.17.95.181:15060>;tag=v3N0p0Xe2t0mQ
+Call-ID: 88-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.405389	1665893130.405389: Aborting call on unexpected message for Call-Id '90-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31544 <sip:31544@172.17.95.181:15060>;tag=90
+To: 31544 <sip:31544@172.17.95.181:15060>;tag=1gmvZ7H0K7FjH
+Call-ID: 90-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.405618	1665893130.405618: Dead call 90-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-90--1
+From: 31544 <sip:31544@172.17.95.181:15060>;tag=90
+To: 31544 <sip:31544@172.17.95.181:15060>;tag=1gmvZ7H0K7FjH
+Call-ID: 90-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.522492	1665893130.522492: Aborting call on unexpected message for Call-Id '92-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31545 <sip:31545@172.17.95.181:15060>;tag=92
+To: 31545 <sip:31545@172.17.95.181:15060>;tag=6Xjr8e6H5KZFB
+Call-ID: 92-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.522718	1665893130.522718: Dead call 92-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-92--1
+From: 31545 <sip:31545@172.17.95.181:15060>;tag=92
+To: 31545 <sip:31545@172.17.95.181:15060>;tag=6Xjr8e6H5KZFB
+Call-ID: 92-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.640480	1665893130.640480: Aborting call on unexpected message for Call-Id '94-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31546 <sip:31546@172.17.95.181:15060>;tag=94
+To: 31546 <sip:31546@172.17.95.181:15060>;tag=BBHmHpt3p0eDN
+Call-ID: 94-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.640707	1665893130.640707: Dead call 94-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-94--1
+From: 31546 <sip:31546@172.17.95.181:15060>;tag=94
+To: 31546 <sip:31546@172.17.95.181:15060>;tag=BBHmHpt3p0eDN
+Call-ID: 94-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.758726	1665893130.758726: Aborting call on unexpected message for Call-Id '96-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31547 <sip:31547@172.17.95.181:15060>;tag=96
+To: 31547 <sip:31547@172.17.95.181:15060>;tag=grFgtXeN8cyaF
+Call-ID: 96-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.758966	1665893130.758966: Dead call 96-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-96--1
+From: 31547 <sip:31547@172.17.95.181:15060>;tag=96
+To: 31547 <sip:31547@172.17.95.181:15060>;tag=grFgtXeN8cyaF
+Call-ID: 96-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.875848	1665893130.875848: Aborting call on unexpected message for Call-Id '98-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31548 <sip:31548@172.17.95.181:15060>;tag=98
+To: 31548 <sip:31548@172.17.95.181:15060>;tag=N5Dc3426SSD8r
+Call-ID: 98-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.876067	1665893130.876067: Dead call 98-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-98--1
+From: 31548 <sip:31548@172.17.95.181:15060>;tag=98
+To: 31548 <sip:31548@172.17.95.181:15060>;tag=N5Dc3426SSD8r
+Call-ID: 98-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.994175	1665893130.994175: Aborting call on unexpected message for Call-Id '100-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31549 <sip:31549@172.17.95.181:15060>;tag=100
+To: 31549 <sip:31549@172.17.95.181:15060>;tag=tjc8BcQrB6v5j
+Call-ID: 100-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:30.994402	1665893130.994402: Dead call 100-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-100--1
+From: 31549 <sip:31549@172.17.95.181:15060>;tag=100
+To: 31549 <sip:31549@172.17.95.181:15060>;tag=tjc8BcQrB6v5j
+Call-ID: 100-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.111937	1665893131.111937: Aborting call on unexpected message for Call-Id '102-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31550 <sip:31550@172.17.95.181:15060>;tag=102
+To: 31550 <sip:31550@172.17.95.181:15060>;tag=ZZa4mKBaXjc3c
+Call-ID: 102-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.112164	1665893131.112164: Dead call 102-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-102--1
+From: 31550 <sip:31550@172.17.95.181:15060>;tag=102
+To: 31550 <sip:31550@172.17.95.181:15060>;tag=ZZa4mKBaXjc3c
+Call-ID: 102-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.228021	1665893131.228021: Aborting call on unexpected message for Call-Id '104-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31551 <sip:31551@172.17.95.181:15060>;tag=104
+To: 31551 <sip:31551@172.17.95.181:15060>;tag=4c9ZXtZUeZU0p
+Call-ID: 104-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.228248	1665893131.228248: Dead call 104-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-104--1
+From: 31551 <sip:31551@172.17.95.181:15060>;tag=104
+To: 31551 <sip:31551@172.17.95.181:15060>;tag=4c9ZXtZUeZU0p
+Call-ID: 104-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.347181	1665893131.347181: Aborting call on unexpected message for Call-Id '106-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31552 <sip:31552@172.17.95.181:15060>;tag=106
+To: 31552 <sip:31552@172.17.95.181:15060>;tag=9S7U61KD0BByg
+Call-ID: 106-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.347407	1665893131.347407: Dead call 106-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-106--1
+From: 31552 <sip:31552@172.17.95.181:15060>;tag=106
+To: 31552 <sip:31552@172.17.95.181:15060>;tag=9S7U61KD0BByg
+Call-ID: 106-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.464234	1665893131.464234: Aborting call on unexpected message for Call-Id '108-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31553 <sip:31553@172.17.95.181:15060>;tag=108
+To: 31553 <sip:31553@172.17.95.181:15060>;tag=e75QF97yHrtUa
+Call-ID: 108-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.464455	1665893131.464455: Dead call 108-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-108--1
+From: 31553 <sip:31553@172.17.95.181:15060>;tag=108
+To: 31553 <sip:31553@172.17.95.181:15060>;tag=e75QF97yHrtUa
+Call-ID: 108-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.582345	1665893131.582345: Aborting call on unexpected message for Call-Id '110-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31554 <sip:31554@172.17.95.181:15060>;tag=110
+To: 31554 <sip:31554@172.17.95.181:15060>;tag=Km4Krgvg349rm
+Call-ID: 110-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.582588	1665893131.582588: Dead call 110-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-110--1
+From: 31554 <sip:31554@172.17.95.181:15060>;tag=110
+To: 31554 <sip:31554@172.17.95.181:15060>;tag=Km4Krgvg349rm
+Call-ID: 110-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.700502	1665893131.700502: Aborting call on unexpected message for Call-Id '112-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31555 <sip:31555@172.17.95.181:15060>;tag=112
+To: 31555 <sip:31555@172.17.95.181:15060>;tag=r12F1Qg2mHSpe
+Call-ID: 112-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.700733	1665893131.700733: Dead call 112-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-112--1
+From: 31555 <sip:31555@172.17.95.181:15060>;tag=112
+To: 31555 <sip:31555@172.17.95.181:15060>;tag=r12F1Qg2mHSpe
+Call-ID: 112-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.817609	1665893131.817609: Aborting call on unexpected message for Call-Id '114-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31556 <sip:31556@172.17.95.181:15060>;tag=114
+To: 31556 <sip:31556@172.17.95.181:15060>;tag=Xe1BaZ4K6X8Kr
+Call-ID: 114-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.817850	1665893131.817850: Dead call 114-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-114--1
+From: 31556 <sip:31556@172.17.95.181:15060>;tag=114
+To: 31556 <sip:31556@172.17.95.181:15060>;tag=Xe1BaZ4K6X8Kr
+Call-ID: 114-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.934757	1665893131.934757: Aborting call on unexpected message for Call-Id '116-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31557 <sip:31557@172.17.95.181:15060>;tag=116
+To: 31557 <sip:31557@172.17.95.181:15060>;tag=2UZ7j6r5QarHj
+Call-ID: 116-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:31.934981	1665893131.934981: Dead call 116-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-116--1
+From: 31557 <sip:31557@172.17.95.181:15060>;tag=116
+To: 31557 <sip:31557@172.17.95.181:15060>;tag=2UZ7j6r5QarHj
+Call-ID: 116-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.051951	1665893132.051951: Aborting call on unexpected message for Call-Id '118-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31558 <sip:31558@172.17.95.181:15060>;tag=118
+To: 31558 <sip:31558@172.17.95.181:15060>;tag=78X3UDDQ9p7ec
+Call-ID: 118-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.052182	1665893132.052182: Dead call 118-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-118--1
+From: 31558 <sip:31558@172.17.95.181:15060>;tag=118
+To: 31558 <sip:31558@172.17.95.181:15060>;tag=78X3UDDQ9p7ec
+Call-ID: 118-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.170765	1665893132.170765: Aborting call on unexpected message for Call-Id '120-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31559 <sip:31559@172.17.95.181:15060>;tag=120
+To: 31559 <sip:31559@172.17.95.181:15060>;tag=cpvZ4m18t3pcp
+Call-ID: 120-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.171041	1665893132.171041: Dead call 120-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-120--1
+From: 31559 <sip:31559@172.17.95.181:15060>;tag=120
+To: 31559 <sip:31559@172.17.95.181:15060>;tag=cpvZ4m18t3pcp
+Call-ID: 120-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.288154	1665893132.288154: Aborting call on unexpected message for Call-Id '122-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31560 <sip:31560@172.17.95.181:15060>;tag=122
+To: 31560 <sip:31560@172.17.95.181:15060>;tag=H3tUDvNtcg69F
+Call-ID: 122-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.288386	1665893132.288386: Dead call 122-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-122--1
+From: 31560 <sip:31560@172.17.95.181:15060>;tag=122
+To: 31560 <sip:31560@172.17.95.181:15060>;tag=H3tUDvNtcg69F
+Call-ID: 122-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.404942	1665893132.404942: Aborting call on unexpected message for Call-Id '124-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31561 <sip:31561@172.17.95.181:15060>;tag=124
+To: 31561 <sip:31561@172.17.95.181:15060>;tag=pgSQp39ByvN7S
+Call-ID: 124-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.405171	1665893132.405171: Dead call 124-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-124--1
+From: 31561 <sip:31561@172.17.95.181:15060>;tag=124
+To: 31561 <sip:31561@172.17.95.181:15060>;tag=pgSQp39ByvN7S
+Call-ID: 124-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.523136	1665893132.523136: Aborting call on unexpected message for Call-Id '126-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31562 <sip:31562@172.17.95.181:15060>;tag=126
+To: 31562 <sip:31562@172.17.95.181:15060>;tag=UXQKZayXF944K
+Call-ID: 126-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.523362	1665893132.523362: Dead call 126-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-126--1
+From: 31562 <sip:31562@172.17.95.181:15060>;tag=126
+To: 31562 <sip:31562@172.17.95.181:15060>;tag=UXQKZayXF944K
+Call-ID: 126-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.640092	1665893132.640092: Aborting call on unexpected message for Call-Id '128-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31563 <sip:31563@172.17.95.181:15060>;tag=128
+To: 31563 <sip:31563@172.17.95.181:15060>;tag=0apF8HjF1Nm2D
+Call-ID: 128-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.640317	1665893132.640317: Dead call 128-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-128--1
+From: 31563 <sip:31563@172.17.95.181:15060>;tag=128
+To: 31563 <sip:31563@172.17.95.181:15060>;tag=0apF8HjF1Nm2D
+Call-ID: 128-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.759052	1665893132.759052: Aborting call on unexpected message for Call-Id '130-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31564 <sip:31564@172.17.95.181:15060>;tag=130
+To: 31564 <sip:31564@172.17.95.181:15060>;tag=5QmBHS60j23ZQ
+Call-ID: 130-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.759271	1665893132.759271: Dead call 130-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-130--1
+From: 31564 <sip:31564@172.17.95.181:15060>;tag=130
+To: 31564 <sip:31564@172.17.95.181:15060>;tag=5QmBHS60j23ZQ
+Call-ID: 130-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.875622	1665893132.875622: Aborting call on unexpected message for Call-Id '132-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31565 <sip:31565@172.17.95.181:15060>;tag=132
+To: 31565 <sip:31565@172.17.95.181:15060>;tag=a5j7S0tj4eKXH
+Call-ID: 132-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.875835	1665893132.875835: Dead call 132-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-132--1
+From: 31565 <sip:31565@172.17.95.181:15060>;tag=132
+To: 31565 <sip:31565@172.17.95.181:15060>;tag=a5j7S0tj4eKXH
+Call-ID: 132-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.992714	1665893132.992714: Aborting call on unexpected message for Call-Id '134-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31566 <sip:31566@172.17.95.181:15060>;tag=134
+To: 31566 <sip:31566@172.17.95.181:15060>;tag=FjH327e4NU2tB
+Call-ID: 134-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:32.992941	1665893132.992941: Dead call 134-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-134--1
+From: 31566 <sip:31566@172.17.95.181:15060>;tag=134
+To: 31566 <sip:31566@172.17.95.181:15060>;tag=FjH327e4NU2tB
+Call-ID: 134-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:33.111282	1665893133.111282: Aborting call on unexpected message for Call-Id '136-20350@172.17.95.179': while expecting '200' (index 3), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 172.17.95.179:5060
+From: 31567 <sip:31567@172.17.95.181:15060>;tag=136
+To: 31567 <sip:31567@172.17.95.181:15060>;tag=mZFZBF3N77HrN
+Call-ID: 136-20350@172.17.95.179
+CSeq: 2 REGISTER
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.
+2022-10-16	12:05:33.111528	1665893133.111528: Dead call 136-20350@172.17.95.179 (aborted at index 3), received 'SIP/2.0 481 Call Does Not Exist
+Via: SIP/2.0/UDP 172.17.95.179:5060;branch=z9hG4bK-20350-136--1
+From: 31567 <sip:31567@172.17.95.181:15060>;tag=136
+To: 31567 <sip:31567@172.17.95.181:15060>;tag=mZFZBF3N77HrN
+Call-ID: 136-20350@172.17.95.179
+CSeq: 3 BYE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+'.

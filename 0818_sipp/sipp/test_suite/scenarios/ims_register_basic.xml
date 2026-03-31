@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Basic Register">
+  <!-- 定义全局变量，添加reg_count计数器 -->
+  <Global variables="tmp_expires,refresh_time,reg_count,cseq_value,cseq_value_str"/>
+
+  <nop>
+    <action>  
+      <todouble assign_to="reg_count" variable="reg_count"/>
+    </action>
+  </nop>
+
+  <!-- 主注册流程 -->
+  <label id="register"/>
+
+  <!-- 发送REGISTER请求 -->
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:[field1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      Route: <sip:[field1];lr>
+      From: <sip:[field0]@[field1]>;tag=[call_number]
+      To: <sip:[field0]@[field1]>
+      Call-ID: [call_id]
+      P-Visited-Network-ID: ims.mnc011.mcc460.3gppnetwork.org
+      CSeq: 1 REGISTER
+      Max-Forwards: 70
+      Contact: <sip:[field0]@[local_ip]:[local_port]>
+      User-Agent: SIPp IMS Client
+      Expires: 18000
+      Content-Length: 0
+    ]]>
+  </send>
+
+  <!-- 可选：接收100 Trying -->
+  <recv response="100" optional="true">
+  </recv>
+
+  <!-- 接收200 OK并获取expires值 -->
+  <recv response="200" timeout="5000">
+    <action>
+      <!-- 计算刷新时间 -->
+      <ereg regexp=".*expires=([0-9]+).*" search_in="hdr" header="Contact:" check_it="true" assign_to="tmp_expires" default_value="3600"/>
+      <ereg regexp="([0-9]+)" search_in="hdr" header="Expires:" check_it="true" assign_to="tmp_expires" default_value="[$tmp_expires]"/>
+      <todouble assign_to="tmp_expires" variable="tmp_expires"/>
+      <divide assign_to="tmp_expires" value="2"/>
+      <todouble assign_to="refresh_time" variable="tmp_expires"/>
+      <multiply assign_to="refresh_time" value="1000"/>
+      
+      <!-- 从收到的CSeq头中提取实际值 -->
+      <ereg regexp="([0-9]+)" search_in="hdr" header="CSeq:" check_it="true" assign_to="cseq_value_str"/>
+      <todouble assign_to="cseq_value" variable="cseq_value_str"/>
+      <add assign_to="cseq_value" value="1"/>
+      <assignstr assign_to="temp_str" value="[$cseq_value]"/>
+      <ereg regexp="([0-9]+)"
+        search_in="var"
+        variable="temp_str"
+        assign_to="cseq_value_str"/>
+    </action>
+  </recv>
+
+  <label id="subscribe_label"/>
+  <send retrans="500">
+    <![CDATA[
+      SUBSCRIBE sip:[field0]@[field1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch];rport
+      Route: <sip:[remote_ip]:[remote_port];lr>
+      From: <sip:[field9]@[field1]>;tag=[call_number]
+      To: <sip:[field9]@[field1]>
+      Call-ID: [call_id]
+      CSeq: 1 SUBSCRIBE
+      Contact: <sip:[field9]@[local_ip]:[local_port];transport=TCP>;+sip.instance="<urn:gsma:imei:86253004-794212-0>"
+      Require: sec-agree
+      Proxy-Require: sec-agree
+      Supported: path,sec-agree
+      Event: reg
+      Accept: application/reginfo+xml
+      P-Visited-Network-ID: ims.mnc011.mcc460.3gppnetwork.org
+      Max-Forwards: 70
+      User-Agent: IM-client/OMA1.0 HW-Rto/V1.0
+      Expires: 1800
+      Content-Length: 0
+    ]]>
+  </send>
+
+  <recv response="200" timeout="5000">
+  </recv>
+  <recv request="NOTIFY" timeout="5000">
+  </recv>
+
+  <send>
+    <![CDATA[
+      SIP/2.0 200 OK
+      [last_Via:]
+      [last_From:]
+      [last_To:]
+      [last_Call-ID:]
+      [last_CSeq:]
+      Contact: <sip:[field0]@[local_ip]:[local_port]>
+      User-Agent: SIPp IMS Client
+      Content-Length: 0
+    ]]>
+  </send>
+
+  <pause variable="refresh_time" />
+  
+  <label id="period_register"/>
+   <!-- 发送REGISTER请求 -->
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:[field1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      Route: <sip:[field1];lr>
+      From: <sip:[field0]@[field1]>;tag=[call_number]
+      To: <sip:[field0]@[field1]>
+      Call-ID: [call_id]
+      P-Visited-Network-ID: ims.mnc011.mcc460.3gppnetwork.org
+      CSeq: [$cseq_value_str] REGISTER
+      Max-Forwards: 70
+      Contact: <sip:[field0]@[local_ip]:[local_port]>
+      User-Agent: SIPp IMS Client
+      Expires: 18000
+      Content-Length: 0
+    ]]>
+  </send>
+
+  <!-- 可选：接收100 Trying -->
+  <recv response="100" optional="true">
+  </recv>
+
+  <!-- 接收200 OK并获取expires值 -->
+  <recv response="200" timeout="5000" next="end_scenario" test="end_test">
+    <action>
+      <!-- 计算刷新时间 -->
+      <ereg regexp=".*expires=([0-9]+).*" search_in="hdr" header="Contact:" check_it="true" assign_to="tmp_expires" default_value="3600"/>
+      <ereg regexp="([0-9]+)" search_in="hdr" header="Expires:" check_it="true" assign_to="tmp_expires" default_value="[$tmp_expires]"/>
+      <todouble assign_to="tmp_expires" variable="tmp_expires"/>
+      <divide assign_to="tmp_expires" value="2"/>
+      <todouble assign_to="refresh_time" variable="tmp_expires"/>
+      <multiply assign_to="refresh_time" value="1000"/>
+      
+      <!-- 从收到的CSeq头中提取实际值 -->
+      <ereg regexp="([0-9]+)" search_in="hdr" header="CSeq:" check_it="true" assign_to="cseq_value"/>
+      <todouble assign_to="cseq_value" variable="cseq_value"/>
+      <add assign_to="cseq_value" value="1"/>
+      <assignstr assign_to="temp_str" value="[$cseq_value]"/>
+      <ereg regexp="([0-9]+)"
+        search_in="var"
+        variable="temp_str"
+        assign_to="cseq_value_str"/>
+      <test assign_to="end_test" variable="cseq_value" compare="greater_than" variable2="reg_count"/>
+    </action>
+  </recv>
+  <pause variable="refresh_time" />
+  <nop next="period_register"/>
+
+  <label id="end_scenario"/>
+  <pause variable="refresh_time" />
+  <!-- 发送REGISTER请求 -->
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:[field1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      Route: <sip:[field1];lr>
+      From: <sip:[field0]@[field1]>;tag=[call_number]
+      To: <sip:[field0]@[field1]>
+      Call-ID: [call_id]
+      P-Visited-Network-ID: ims.mnc011.mcc460.3gppnetwork.org
+      CSeq: [cseq] REGISTER
+      Max-Forwards: 70
+      Contact: <sip:[field0]@[local_ip]:[local_port]>
+      User-Agent: SIPp IMS Client
+      Expires: 0
+      Content-Length: 0
+    ]]>
+  </send>
+
+  <!-- 可选：接收100 Trying -->
+  <recv response="100" optional="true">
+  </recv>
+
+  <!-- 接收200 OK并获取expires值 -->
+  <recv response="200" timeout="5000">
+  </recv>
+
+  <pause milliseconds="1000" next="register"/>
+
+  <!-- 定义响应时间分布表（单位：毫秒） -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+  <!-- 定义呼叫时长分布表（单位：毫秒） -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+
+</scenario>

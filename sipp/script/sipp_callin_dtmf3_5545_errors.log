@@ -1,0 +1,12 @@
+sipp: The following events occured:
+2022-10-20	09:13:54.861955	1666228434.861955: The allin_dtmf2 command requires at least one argument.
+2022-10-20	09:21:19.902910	1666228879.902910: Unrecognized command: "d".
+2022-10-20	09:24:27.778855	1666229067.778855: Unrecognized command: "d".
+2022-10-20	09:24:45.153483	1666229085.153483: Unrecognized command: "d".
+2022-10-20	09:25:05.199409	1666229105.199409: Unrecognized command: "d".
+2022-10-20	09:25:11.530119	1666229111.530119: Unrecognized command: "d".
+2022-10-20	09:25:22.574835	1666229122.574835: Unrecognized command: "d".
+2022-10-20	09:25:32.750942	1666229132.750942: Unrecognized command: "d".
+2022-10-20	09:25:50.563139	1666229150.563139: Unrecognized command: "d".
+2022-10-20	09:26:33.735217	1666229193.735217: Unrecognized command: "d".
+2022-10-20	09:26:39.212847	1666229199.212847: The lra	ear command requires at least one argument.

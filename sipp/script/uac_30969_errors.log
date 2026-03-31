@@ -1,0 +1,113 @@
+sipp: The following events occured:
+2022-10-15	11:48:59.582185	1665805739.582185: Aborting call on unexpected message for Call-Id '1037-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1037-0
+Max-Forwards: 53
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001037
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=64egmaDymBUFc
+Call-ID: 1037-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.
+2022-10-15	11:49:00.951095	1665805740.951095: Aborting call on unexpected message for Call-Id '1092-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1092-0
+Max-Forwards: 53
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001092
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=rFyrtZm4vmKjj
+Call-ID: 1092-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.
+2022-10-15	11:49:02.326677	1665805742.326677: Aborting call on unexpected message for Call-Id '1147-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1147-0
+Max-Forwards: 56
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001147
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=yBc5Scvy0re8Q
+Call-ID: 1147-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.
+2022-10-15	11:49:02.722581	1665805742.722581: Aborting call on unexpected message for Call-Id '1124-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1124-0
+Max-Forwards: 56
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001124
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=gc1g8FNv5yDcK
+Call-ID: 1124-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.
+2022-10-15	11:49:02.926895	1665805742.926895: Aborting call on unexpected message for Call-Id '1171-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1171-0
+Max-Forwards: 58
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001171
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=6QtgBcFyQm4pF
+Call-ID: 1171-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.
+2022-10-15	11:49:03.713639	1665805743.713639: Aborting call on unexpected message for Call-Id '1142-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1142-0
+Max-Forwards: 55
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001142
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=mHFD8XKUXZFDm
+Call-ID: 1142-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.
+2022-10-15	11:49:03.720673	1665805743.720673: Aborting call on unexpected message for Call-Id '1095-30969@172.17.95.179': while expecting '200' (index 4), received 'SIP/2.0 480 Temporarily Unavailable
+Via: SIP/2.0/UDP 172.17.95.179:4055;branch=z9hG4bK-30969-1095-0
+Max-Forwards: 53
+From: sipp <sip:sipp@172.17.95.179:4055>;tag=30969SIPpTag001095
+To: 1111 <sip:1111@172.17.95.179:15080>;tag=y5ND51SSBaS2Q
+Call-ID: 1095-30969@172.17.95.179
+CSeq: 1 INVITE
+User-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bit
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Reason: SIP;cause=604;text="MEDIA_TIMEOUT"
+Content-Length: 0
+Remote-Party-ID: "1111" <sip:1111@172.17.95.179>;party=calling;privacy=off;screen=no
+
+'.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<scenario name="Simple Register">
+  <!-- 发送REGISTER请求 -->
+  <send retrans="500">
+    <![CDATA[
+      REGISTER sip:[field1] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      Route: <sip:[field1];lr>
+      From: <sip:[field0]@[field1]>;tag=[call_number]
+      To: <sip:[field0]@[field1]>
+      Call-ID: [call_id]
+      P-Visited-Network-ID: ims.mnc011.mcc460.3gppnetwork.org
+      CSeq: 1 REGISTER
+      Max-Forwards: 70
+      Contact: <sip:[field0]@[local_ip]:[local_port]>
+      User-Agent: SIPp IMS Client
+      Expires: 3600
+      Content-Length: 0
+    ]]>
+  </send>
+
+  <!-- 可选：接收100 Trying -->
+  <recv response="100" optional="true">
+  </recv>
+
+  <!-- 接收200 OK -->
+  <recv response="200" timeout="10000">
+  </recv>
+
+  <!-- 响应时间分布表（单位：毫秒） -->
+  <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
+
+  <!-- 呼叫时长分布表（单位：毫秒） -->
+  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+</scenario>
