@@ -31,6 +31,8 @@ stamp-h1
 test-driver
 *.log
 *.csv
+*.csv.*
+*.html
 vim_ctags
 compile_commands.json
 .*.sw?

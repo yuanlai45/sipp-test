@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 定義檔案路徑
-UAC_CSV="/home/sder/sipp-test/0818_sipp/sipp/test_suite/config/uac_users.csv"
-UAS_CSV="/home/sder/sipp-test/0818_sipp/sipp/test_suite/config/uas_users.csv"
+UAC_CSV="/home/sder/sipp-test/ims_test/config/uac_users.csv"
+UAS_CSV="/home/sder/sipp-test/ims_test/config/uas_users.csv"
 
 # 清空目標檔案
 > "$UAC_CSV"
