@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE scenario SYSTEM "sipp.dtd">
 
-<!-- 循环注册/注销压力测试场景
-     用法示例:
-       sipp <target> -sf ims_register_cycle.xml -inf uac_users.csv \
-            -i <local_ip> -p <port> -t un \
-            -r <cps> -l <max_concurrent> \
-            -key reg_hold_time 5000 \
-            -key dereg_pause 1000
+<!-- 单轮注册+注销场景（无循环）
+     流程: REGISTER(注册) → 保持 hold_time ms → REGISTER(注销, Expires:0) → 结束
+     典型用法 (10 用户, 间隔 10s):
+       ./sipp 10.18.2.132:5060 \
+         -sf scenarios/ims_register_batch.xml \
+         -inf config/uac_users.csv \
+         -i 10.18.2.59 -p 10000 -t un \
+         -r 100 -l 10 -m 10 \
+         -key hold_time 10000 \
+         -nd
      参数:
-       reg_hold_time  — 注册成功后保持时长 (毫秒), 默认 5000
-       dereg_pause    — 注销成功后等待时长 (毫秒), 默认 1000
+       hold_time  — 注册成功后保持时长 (毫秒), 默认 10000
 -->
-<scenario name="IMS Register Cycle - Stress Test">
-  <Global variables="reg_hold_time,dereg_pause"/>
+<scenario name="IMS Register Batch - Single Round">
+  <Global variables="hold_time"/>
 
   <nop>
     <action>
-      <assignstr assign_to="reg_hold_time" value="[reg_hold_time]"/>
-      <todouble assign_to="reg_hold_time" variable="reg_hold_time"/>
-      <assignstr assign_to="dereg_pause" value="[dereg_pause]"/>
-      <todouble assign_to="dereg_pause" variable="dereg_pause"/>
+      <assignstr assign_to="hold_time" value="[hold_time]"/>
+      <todouble assign_to="hold_time" variable="hold_time"/>
     </action>
   </nop>
 
-  <!-- ===== 注册循环入口 ===== -->
-  <label id="register"/>
-
-  <!-- 发送 REGISTER (注册) -->
+  <!-- ===== 注册 ===== -->
   <send retrans="500">
     <![CDATA[
       REGISTER sip:[field1] SIP/2.0
@@ -35,7 +32,7 @@
       From: <sip:[field0]@[field1]>;tag=[call_number]
       To: <sip:[field0]@[field1]>
       Call-ID: [call_id]
-      CSeq: [cseq] REGISTER
+      CSeq: 1 REGISTER
       Max-Forwards: 70
       Contact: <sip:[field0]@[local_ip]:[local_port];transport=UDP>
       Authorization: Digest username="[field0]@[field1]",realm="[field1]",uri="sip:[field1]",nonce="",response=""
@@ -51,12 +48,10 @@
   <recv response="200" timeout="10000">
   </recv>
 
-  <!-- 保持注册状态一段时间 -->
-  <pause variable="reg_hold_time" milliseconds="5000"/>
+  <!-- 保持注册状态 hold_time ms（默认 10s） -->
+  <pause variable="hold_time" milliseconds="10000"/>
 
-  <!-- ===== Unregister ===== -->
-
-  <!-- 发送 REGISTER (Unregister, Expires: 0) -->
+  <!-- ===== 注销 (Expires: 0) ===== -->
   <send retrans="500">
     <![CDATA[
       REGISTER sip:[field1] SIP/2.0
@@ -64,7 +59,7 @@
       From: <sip:[field0]@[field1]>;tag=[call_number]
       To: <sip:[field0]@[field1]>
       Call-ID: [call_id]
-      CSeq: [cseq] REGISTER
+      CSeq: 2 REGISTER
       Max-Forwards: 70
       Contact: <sip:[field0]@[local_ip]:[local_port];transport=UDP>
       Authorization: Digest username="[field0]@[field1]",realm="[field1]",uri="sip:[field1]",nonce="",response=""
@@ -80,13 +75,9 @@
   <recv response="200" timeout="10000">
   </recv>
 
-  <!-- Unregister 完成后短暂等待，再次发起注册 -->
-  <pause variable="dereg_pause" milliseconds="1000"/>
-
-  <!-- 循环回到注册 -->
-  <nop next="register"/>
+  <!-- 场景结束，不循环 -->
 
   <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
-  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+  <CallLengthRepartition value="100, 500, 1000, 5000, 10000, 20000"/>
 
 </scenario>

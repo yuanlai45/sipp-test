@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE scenario SYSTEM "sipp.dtd">
 
-<scenario name="Register Once - No Auth No IPSec">
+<!-- UAS 组合主场景: 注册 → 保持进程等待来电完成
+     INVITE 由 -oocsf ims_call_uas_demo.xml 处理
+     用法:
+       ./sipp <pcscf> -sf scenarios/ims_uas_combined.xml \
+                      -oocsf scenarios/ims_call_uas_demo.xml \
+                      -inf config/test_single_uas.csv \
+                      -i <local_ip> -p 10001 -t u1 -m 1 -nd -->
+<scenario name="UAS Register and Hold">
 
+  <!-- 注册 -->
   <send retrans="500">
     <![CDATA[
       REGISTER sip:[field1] SIP/2.0
@@ -26,7 +34,11 @@
   <recv response="200" timeout="10000">
   </recv>
 
+  <!-- 注册成功，保持进程存活 60 秒等待来电处理完成
+       (INVITE 由 -oocsf 指定的 ims_call_uas_demo.xml 自动处理) -->
+  <pause milliseconds="60000"/>
+
   <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
-  <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
+  <CallLengthRepartition value="100, 500, 1000, 5000, 10000"/>
 
 </scenario>
