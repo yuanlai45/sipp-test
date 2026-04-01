@@ -6,6 +6,23 @@ P-CSCF：`10.18.2.132:5060` | 本机 IP：`10.18.2.59`
 
 ---
 
+## 场景零：单用户注册验证
+
+**场景文件**：`scenarios/ims_register_once.xml`  
+**流程**：1 个用户注册 → 收到 200 OK → 结束（不注销、不循环）
+
+```bash
+./sipp 10.18.2.132:5060 \
+  -sf scenarios/ims_register_once.xml \
+  -inf config/test_single_uac.csv \
+  -i 10.18.2.59 -p 10000 -t un \
+  -m 1 -nd
+```
+
+> 成功标志：`200 <---------- 1`，`Failed call: 0`
+
+---
+
 ## 场景一：单轮批量注册/注销
 
 **场景文件**：`scenarios/ims_register_batch.xml`  

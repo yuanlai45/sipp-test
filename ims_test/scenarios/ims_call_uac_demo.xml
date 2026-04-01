@@ -45,7 +45,7 @@
       CSeq: 1 INVITE
       Max-Forwards: 70
       Contact: <sip:+86[field9]@[local_ip]:[local_port];transport=[transport]>
-      P-Preferred-Identity: <sip:[field9]@[field1]>
+      P-Preferred-Identity: <tel:+86[field9]>
       P-Access-Network-Info: 3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=460011[field0]
       Allow: INVITE, ACK, CANCEL, BYE, UPDATE, OPTIONS
       User-Agent: IM-client/OMA1.0 SIPp-Demo/1.0
