@@ -53,7 +53,26 @@ tail -n +2 config/uac_users.csv | head -5000 >> /tmp/uac_5000.csv
   -nd
 ```
 
-### 10000 用户（UAC 5000 + UAS 5000 合并）
+### 8000 用户（UAC 5000 + UAS 前 3000 合并）
+
+```bash
+head -1 config/uac_users.csv > /tmp/uac_8000.csv
+tail -n +2 config/uac_users.csv >> /tmp/uac_8000.csv
+tail -n +2 config/uas_users.csv | head -3000 >> /tmp/uac_8000.csv
+
+./sipp 10.18.2.132:5060 \
+  -sf scenarios/ims_register_batch.xml \
+  -inf /tmp/uac_8000.csv \
+  -i 10.18.2.59 -p 10000 -t un \
+  -r 100 -l 8000 -m 8000 \
+  -key hold_time 100000 \
+  -nd
+```
+
+> IMSI 范围：460110000010001~460110000018000（HSS 已开户）  
+> hold_time=100s：8000用户/100cps=80s注册完，留20s余量再开始注销。
+
+### 10000 用户（UAC 5000 + UAS 5000 全部合并）
 
 ```bash
 head -1 config/uac_users.csv > /tmp/uac_10000.csv
@@ -69,6 +88,7 @@ tail -n +2 config/uas_users.csv >> /tmp/uac_10000.csv
   -nd
 ```
 
+> IMSI 范围：460110000010001~460110000020000（需 HSS 全部开户）  
 > hold_time=120s：10000用户/100cps=100s注册完，留20s余量再开始注销。
 
 ### 参数调整
