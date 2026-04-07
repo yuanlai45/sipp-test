@@ -12,7 +12,7 @@
          -key hold_time 10000 \
          -nd
      参数:
-       hold_time  — 注册成功后保持时长 (毫秒), 默认 10000
+       hold_time  — 注册成功后保持时长 (毫秒), 默认 60000
 -->
 <scenario name="IMS Register Batch - Single Round">
   <Global variables="hold_time"/>
@@ -48,8 +48,8 @@
   <recv response="200" timeout="10000">
   </recv>
 
-  <!-- 保持注册状态 hold_time ms（默认 10s） -->
-  <pause variable="hold_time" milliseconds="10000"/>
+  <!-- 保持注册状态 hold_time ms（默认 60s） -->
+  <pause variable="hold_time" milliseconds="60000"/>
 
   <!-- ===== 注销 (Expires: 0) ===== -->
   <send retrans="500">
