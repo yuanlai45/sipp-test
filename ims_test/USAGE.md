@@ -53,6 +53,24 @@ tail -n +2 config/uac_users.csv | head -5000 >> /tmp/uac_5000.csv
   -nd
 ```
 
+### 10000 用户（UAC 5000 + UAS 5000 合并）
+
+```bash
+head -1 config/uac_users.csv > /tmp/uac_10000.csv
+tail -n +2 config/uac_users.csv >> /tmp/uac_10000.csv
+tail -n +2 config/uas_users.csv >> /tmp/uac_10000.csv
+
+./sipp 10.18.2.132:5060 \
+  -sf scenarios/ims_register_batch.xml \
+  -inf /tmp/uac_10000.csv \
+  -i 10.18.2.59 -p 10000 -t un \
+  -r 100 -l 10000 -m 10000 \
+  -key hold_time 120000 \
+  -nd
+```
+
+> hold_time=120s：10000用户/100cps=100s注册完，留20s余量再开始注销。
+
 ### 参数调整
 
 | 改什么 | 怎么改 |
