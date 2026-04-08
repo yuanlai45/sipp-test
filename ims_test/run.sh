@@ -75,7 +75,7 @@ case "$SCENARIO" in
     "$SIPP" "$REMOTE" \
       -sf "$SCENARIOS/ims_register_cycle.xml" \
       -inf "$CSV" \
-      -i "$LOCAL_IP" -p "$LOCAL_PORT" -t un \
+      -i "$LOCAL_IP" -p "$LOCAL_PORT" -t u1 \
       -r "$RATE" -l "$LIMIT" \
       -key reg_hold_time "$HOLD" \
       -key dereg_pause "$PAUSE" \
