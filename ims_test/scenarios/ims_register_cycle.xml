@@ -11,9 +11,10 @@
      参数:
        reg_hold_time  — 注册成功后保持时长 (毫秒), 默认 5000
        dereg_pause    — 注销成功后等待时长 (毫秒), 默认 1000
+       max_rounds     — 循环轮数, 0=无限循环 (默认), N=执行 N 轮后停止
 -->
 <scenario name="IMS Register Cycle - Stress Test">
-  <Global variables="reg_hold_time,dereg_pause"/>
+  <Global variables="reg_hold_time,dereg_pause,max_rounds"/>
 
   <nop>
     <action>
@@ -21,6 +22,8 @@
       <todouble assign_to="reg_hold_time" variable="reg_hold_time"/>
       <assignstr assign_to="dereg_pause" value="[dereg_pause]"/>
       <todouble assign_to="dereg_pause" variable="dereg_pause"/>
+      <assignstr assign_to="max_rounds" value="[max_rounds]"/>
+      <todouble assign_to="max_rounds" variable="max_rounds"/>
     </action>
   </nop>
 
@@ -83,8 +86,13 @@
   <!-- Unregister 完成后短暂等待，再次发起注册 -->
   <pause variable="dereg_pause" milliseconds="1000"/>
 
-  <!-- 循环回到注册 -->
-  <nop next="register"/>
+  <!-- 轮数控制：max_rounds 每轮减 1，到 0 停止；初始值 0 减后为负数(非零)→永续循环 -->
+  <nop>
+    <action>
+      <subtract assign_to="max_rounds" value="1"/>
+    </action>
+  </nop>
+  <nop test="max_rounds" next="register"/>
 
   <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
   <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>

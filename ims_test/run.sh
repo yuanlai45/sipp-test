@@ -30,6 +30,7 @@ LIMIT=500
 CALLS=0          # 0 = 无限循环
 HOLD=5000        # register_cycle: 注册保持时长 (ms)
 PAUSE=1000       # register_cycle: 注销后等待时长 (ms)
+ROUNDS=0         # register_cycle: 循环轮数 (0=无限)
 CSV="$CONFIG/uac_users.csv"
 TIMEOUT=""
 
@@ -44,6 +45,7 @@ while [[ $# -gt 0 ]]; do
     -m|--calls)       CALLS="$2";      shift 2 ;;
     --hold)           HOLD="$2";       shift 2 ;;
     --pause)          PAUSE="$2";      shift 2 ;;
+    --rounds)         ROUNDS="$2";     shift 2 ;;
     --csv)            CSV="$2";        shift 2 ;;
     --timeout)        TIMEOUT="-timeout $2"; shift 2 ;;
     *) echo "未知选项: $1"; exit 1 ;;
@@ -71,6 +73,7 @@ case "$SCENARIO" in
       -r "$RATE" -l "$LIMIT" \
       -key reg_hold_time "$HOLD" \
       -key dereg_pause "$PAUSE" \
+      -key max_rounds "$ROUNDS" \
       $M_ARG $TIMEOUT -nd
     ;;
 
@@ -122,6 +125,7 @@ case "$SCENARIO" in
     echo "  -m <n>         总呼叫数 (默认: 无限)"
     echo "  --hold <ms>    注册保持时长 ms, 用于 register_cycle (默认: $HOLD)"
     echo "  --pause <ms>   注销后等待 ms, 用于 register_cycle (默认: $PAUSE)"
+    echo "  --rounds <n>   循环轮数, 0=无限 (默认: $ROUNDS)"
     echo "  --csv <file>   指定 CSV 文件 (默认: config/uac_users.csv)"
     echo "  --timeout <s>  测试超时秒数"
     exit 1
