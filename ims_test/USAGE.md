@@ -63,13 +63,13 @@ tail -n +2 config/uac_users.csv | head -5000 >> /tmp/uac_5000.csv
   -sf scenarios/ims_register_batch.xml \
   -inf /tmp/uac_5000.csv \
   -i 10.18.2.59 -p 10000 -t un \
-  -r 100 -l 5000 -m 5000 \
-  -key hold_time 60000 \
+  -r 500 -l 5000 -m 5000 \
+  -key hold_time 30000 \
   -nd
 
 # 循环（参数含义同上）
 ./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.2.132:5060 \
-  --rate 100 --limit 5000 --hold 60000 --pause 30000 --rounds 10
+  --rate 500 --limit 5000 --hold 20000 --pause 20000 --rounds 2
 ```
 
 ### 8000 用户（UAC 5000 + UAS 前 3000 合并）

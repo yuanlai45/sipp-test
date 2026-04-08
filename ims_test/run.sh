@@ -52,6 +52,12 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+# 若指定了 --rounds 且未手动指定 -m，自动算出总 call 数 = limit × rounds
+# 防止 SIPp 在 call 完成后继续创建新 call
+if [[ "$ROUNDS" -gt 0 && "$CALLS" -eq 0 ]]; then
+  CALLS=$(( LIMIT * ROUNDS ))
+fi
+
 # 构建 -m 参数 (0 表示不传，即无限)
 M_ARG=""
 [[ "$CALLS" -gt 0 ]] && M_ARG="-m $CALLS"
@@ -73,7 +79,6 @@ case "$SCENARIO" in
       -r "$RATE" -l "$LIMIT" \
       -key reg_hold_time "$HOLD" \
       -key dereg_pause "$PAUSE" \
-      -key max_rounds "$ROUNDS" \
       $M_ARG $TIMEOUT -nd
     ;;
 

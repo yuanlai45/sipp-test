@@ -2,19 +2,24 @@
 <!DOCTYPE scenario SYSTEM "sipp.dtd">
 
 <!-- 循环注册/注销压力测试场景
+     每个 call 执行一次：注册 → 保持 → 注销 → 等待 → 结束
+     通过 -m (总 call 数) 控制轮数：-m = limit × rounds
+     不设 -m 则无限循环（SIPp 不断创建新 call）
+
      用法示例:
        sipp <target> -sf ims_register_cycle.xml -inf uac_users.csv \
             -i <local_ip> -p <port> -t un \
             -r <cps> -l <max_concurrent> \
             -key reg_hold_time 5000 \
-            -key dereg_pause 1000
+            -key dereg_pause 1000 \
+            -m 10000
      参数:
-       reg_hold_time  — 注册成功后保持时长 (毫秒), 默认 5000
-       dereg_pause    — 注销成功后等待时长 (毫秒), 默认 1000
-       max_rounds     — 循环轮数, 0=无限循环 (默认), N=执行 N 轮后停止
+       reg_hold_time  — 注册后保持时长 (毫秒), 默认 5000
+       dereg_pause    — 注销后等待时长 (毫秒), 默认 1000
+       -m N           — 总 call 数, 即 limit × rounds（不设则无限）
 -->
 <scenario name="IMS Register Cycle - Stress Test">
-  <Global variables="reg_hold_time,dereg_pause,max_rounds"/>
+  <Global variables="reg_hold_time,dereg_pause"/>
 
   <nop>
     <action>
@@ -22,13 +27,8 @@
       <todouble assign_to="reg_hold_time" variable="reg_hold_time"/>
       <assignstr assign_to="dereg_pause" value="[dereg_pause]"/>
       <todouble assign_to="dereg_pause" variable="dereg_pause"/>
-      <assignstr assign_to="max_rounds" value="[max_rounds]"/>
-      <todouble assign_to="max_rounds" variable="max_rounds"/>
     </action>
   </nop>
-
-  <!-- ===== 注册循环入口 ===== -->
-  <label id="register"/>
 
   <!-- 发送 REGISTER (注册) -->
   <send retrans="500">
@@ -83,16 +83,8 @@
   <recv response="200" timeout="10000">
   </recv>
 
-  <!-- Unregister 完成后短暂等待，再次发起注册 -->
+  <!-- 注销后等待，call 结束。SIPp 按 -m 控制是否创建新 call -->
   <pause variable="dereg_pause" milliseconds="1000"/>
-
-  <!-- 轮数控制：max_rounds 每轮减 1，到 0 停止；初始值 0 减后为负数(非零)→永续循环 -->
-  <nop>
-    <action>
-      <subtract assign_to="max_rounds" value="1"/>
-    </action>
-  </nop>
-  <nop test="max_rounds" next="register"/>
 
   <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
   <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
