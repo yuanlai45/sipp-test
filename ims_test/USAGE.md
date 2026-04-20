@@ -1,7 +1,7 @@
 # IMS SIPp 测试使用说明
 
 工作目录：`cd /home/sder/sipp-test/ims_test`  
-P-CSCF：`10.18.2.132:5060` | 本机 IP：`10.18.2.59` | 用户池：5000 UAC + 5000 UAS
+P-CSCF：`10.18.1.132:5060` | 本机 IP：`10.18.2.59` | 用户池：5000 UAC + 5000 UAS
 
 ---
 
@@ -10,7 +10,7 @@ P-CSCF：`10.18.2.132:5060` | 本机 IP：`10.18.2.59` | 用户池：5000 UAC + 
 注册 1 个用户，收到 200 OK 即成功，不注销。
 
 ```bash
-./sipp 10.18.2.132:5060 \
+./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_register_once.xml \
   -inf config/test_single_uac.csv \
   -i 10.18.2.59 -p 10000 -t un \
@@ -32,7 +32,7 @@ head -1 config/uac_users.csv > /tmp/uac_2000.csv
 tail -n +2 config/uac_users.csv | head -2000 >> /tmp/uac_2000.csv
 
 # 单轮
-./sipp 10.18.2.132:5060 \
+./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_register_batch.xml \
   -inf /tmp/uac_2000.csv \
   -i 10.18.2.59 -p 10000 -t un \
@@ -41,7 +41,7 @@ tail -n +2 config/uac_users.csv | head -2000 >> /tmp/uac_2000.csv
   -nd
 
 # 循环
-./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.2.132:5060 \
+./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.1.132:5060 \
   --rate 50 --limit 2000 --hold 60000 --pause 30000 --rounds 10
 # --hold 60000   注册后保持 60s 再注销（注册→注销间隔）
 # --pause 30000  注销后等 30s 再开始下一轮（轮次间隔）
@@ -59,7 +59,7 @@ head -1 config/uac_users.csv > /tmp/uac_5000.csv
 tail -n +2 config/uac_users.csv | head -5000 >> /tmp/uac_5000.csv
 
 # 单轮
-./sipp 10.18.2.132:5060 \
+./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_register_batch.xml \
   -inf /tmp/uac_5000.csv \
   -i 10.18.2.59 -p 10000 -t un \
@@ -68,7 +68,7 @@ tail -n +2 config/uac_users.csv | head -5000 >> /tmp/uac_5000.csv
   -nd
 
 # 循环（参数含义同上）
-./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.2.132:5060 \
+./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.1.132:5060 \
   --rate 500 --limit 5000 --hold 20000 --pause 20000 --rounds 2
 ```
 
@@ -81,7 +81,7 @@ tail -n +2 config/uac_users.csv >> /tmp/uac_8000.csv
 tail -n +2 config/uas_users.csv | head -3000 >> /tmp/uac_8000.csv
 
 # 单轮
-./sipp 10.18.2.132:5060 \
+./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_register_batch.xml \
   -inf /tmp/uac_8000.csv \
   -i 10.18.2.59 -p 10000 -t un \
@@ -90,7 +90,7 @@ tail -n +2 config/uas_users.csv | head -3000 >> /tmp/uac_8000.csv
   -nd
 
 # 循环（参数含义同上；需先生成 CSV）
-./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.2.132:5060 \
+./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.1.132:5060 \
   --rate 100 --limit 8000 --hold 60000 --pause 30000 --rounds 10 \
   --csv /tmp/uac_8000.csv
 ```
@@ -106,7 +106,7 @@ tail -n +2 config/uac_users.csv >> /tmp/uac_10000.csv
 tail -n +2 config/uas_users.csv >> /tmp/uac_10000.csv
 
 # 单轮
-./sipp 10.18.2.132:5060 \
+./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_register_batch.xml \
   -inf /tmp/uac_10000.csv \
   -i 10.18.2.59 -p 10000 -t un \
@@ -115,7 +115,7 @@ tail -n +2 config/uas_users.csv >> /tmp/uac_10000.csv
   -nd
 
 # 循环（参数含义同上；需先生成 CSV）
-./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.2.132:5060 \
+./run.sh register_cycle -i 10.18.2.59 -p 10000 -r 10.18.1.132:5060 \
   --rate 1000 --limit 10000 --hold 20000 --pause 20000 --rounds 10 \
   --csv /tmp/uac_10000.csv
 ```
@@ -151,12 +151,65 @@ tail -n +2 config/uas_users.csv >> /tmp/uac_10000.csv
 
 ---
 
+## 3. 呼叫测试（UAC ↔ UAS）
+
+UAS 先起（被叫侧），UAC 后起（主叫侧）。每条命令自带 `LOGDIR` 初始化，可直接复制执行。
+
+### UAS（被叫，先起）
+
+```bash
+export LOGDIR=logs/call_test_period/custom_test_$(date +%Y%m%d_%H%M%S) && mkdir -p "$LOGDIR" && \
+./sipp 10.18.1.132:5060 \
+  -sf scenarios/ims_call_uas.xml \
+  -oocsf scenarios/ims_default_response.xml \
+  -inf config/uas_users.csv \
+  -i 10.18.2.59 -p 10000 -mp 50000 -t un \
+  -r 1 -l 1 -timeout 100 -recv_timeout 15000 -nd -fd 1 -max_socket 4000 \
+  -trace_screen -screen_file "$LOGDIR/uas_screen.log" -screen_overwrite false
+```
+
+### UAC（主叫，后起）
+
+```bash
+export LOGDIR=logs/call_test_period/custom_test_$(date +%Y%m%d_%H%M%S) && mkdir -p "$LOGDIR" && \
+./sipp 10.18.1.132:5060 \
+  -sf scenarios/ims_call_uac.xml \
+  -inf config/uac_users.csv \
+  -i 10.18.2.59 -p 20000 -mp 60000 -t un \
+  -r 1 -l 1 -nd -aa -max_socket 4000 \
+  -set call_hold_time 10000 \
+  -fd 1 -timeout 100 \
+  -recv_timeout 15000 \
+  -m 2000 \
+  -trace_screen -screen_file "$LOGDIR/uac_screen.log" -screen_overwrite false \
+  -trace_err   -error_file  "$LOGDIR/uac_errors.log" -error_overwrite false
+```
+
+### 关键参数说明
+
+| 参数 | 含义 |
+|------|------|
+| `-oocsf` | out-of-call 场景，用于 UAS 响应计划外请求 |
+| `-mp`    | RTP/媒体端口起始（UAC/UAS 必须错开） |
+| `-p`     | 信令端口（UAC=20000、UAS=10000，避免冲突） |
+| `-aa`    | 自动回 200 OK 响应（UAC 侧处理 INVITE 之外请求） |
+| `-fd 1`  | 日志刷新间隔 1s |
+| `-nd`    | 关闭默认行为（不自动回 200 到计划外请求） |
+| `-set call_hold_time 10000` | 通话保持 10s 后挂断 |
+| `-m 2000` | 总共发起 2000 通呼叫 |
+| `-recv_timeout 15000` | 15s 未收到预期响应即失败 |
+| `-max_socket 4000` | 最大并发 socket |
+
+> 已从粘贴命令改动：`-i 10.18.2.12` → `-i 10.18.2.59`（本机）。
+
+---
+
 ## 环境信息
 
 | 项目 | 值 |
 |------|-----|
 | 本机 IP | `10.18.2.59` |
-| P-CSCF | `10.18.2.132:5060` |
+| P-CSCF | `10.18.1.132:5060` |
 | UAC IMSI | `460110000010001` ~ `460110000015000` |
 | UAS IMSI | `460110000015001` ~ `460110000020000` |
 | Domain | `ims.mnc011.mcc460.3gppnetwork.org` |
