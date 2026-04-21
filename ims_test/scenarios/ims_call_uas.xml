@@ -48,15 +48,12 @@
     </action>
   </recv>
 
-  <pause variable="refresh_time" />
-  <!-- 返回主注册流程进行刷新 -->
-  <nop next="register"/>
+  <!-- 单轮：注册完成后等待来电，不再循环刷新 -->
+  <pause milliseconds="3600000" />
 
   <label id="subscribe_label"/>
-  <pause variable="refresh_time" />
-  
-  <!-- 返回主注册流程进行刷新 -->
-  <nop next="register"/>
+  <!-- 单轮：注册完成后等待来电，不再循环刷新 -->
+  <pause milliseconds="3600000" />
 
   <!-- 定义响应时间分布表（单位：毫秒） -->
   <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>

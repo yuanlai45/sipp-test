@@ -7,7 +7,7 @@
   <nop>
     <action>
       <todouble assign_to="call_hold_time" variable="call_hold_time" />
-      <assignstr assign_to="call_count" value="20"/>
+      <assignstr assign_to="call_count" value="1"/>
       <todouble assign_to="call_count" variable="call_count" />
     </action>
   </nop>
@@ -38,7 +38,7 @@
   <recv response="200" timeout="5000" >
   </recv>
 
-  <pause milliseconds="5000"/>
+  <pause milliseconds="40000"/>
 
   <label id="call_start"/>
   <!-- 通话流程 -->
@@ -208,15 +208,7 @@
   <recv response="200" timeout="5000">
   </recv>
 
-  <!-- 如果需要再次发起通话，则等待一段时间后重新开始 -->
-  <nop next="call_end" test="end_flag">
-    <action>
-      <subtract assign_to="call_count" value="1"/>
-      <test assign_to="end_flag" variable="call_count" compare="less_than" value="0"/>
-    </action>
-  </nop>
-  <pause milliseconds="10000" next="call_start" />
-  <label id="call_end"/>
+  <!-- 单轮：呼叫完成后结束，不再循环 -->
 
   <!-- 定义响应时间分布表（单位：毫秒） -->
   <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
