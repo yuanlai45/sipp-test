@@ -185,6 +185,41 @@ export LOGDIR=logs/call_test_period/custom_test_$(date +%Y%m%d_%H%M%S) && mkdir 
   -trace_err   -error_file  "$LOGDIR/uac_errors.log" -error_overwrite false
 ```
 
+### 2000 用户压测（单轮）
+
+> 每个 SIPp 实例独立完成 REGISTER → 等待 40s → INVITE → BYE。
+> UAS 需先起并注册完毕，UAC 再起。
+
+**UAS（先起）**
+
+```bash
+export LOGDIR=logs/call_test_period/stress_$(date +%Y%m%d_%H%M%S) && mkdir -p "$LOGDIR" && \
+./sipp 10.18.1.132:5060 \
+  -sf scenarios/ims_call_uas.xml \
+  -oocsf scenarios/ims_default_response.xml \
+  -inf config/uas_users.csv \
+  -i 10.18.2.59 -p 10000 -mp 50000 -t un \
+  -r 100 -l 2000 -timeout 300 -recv_timeout 15000 -nd -fd 1 -max_socket 4000 \
+  -trace_screen -screen_file "$LOGDIR/uas_screen.log" -screen_overwrite false
+```
+
+**UAC（后起）**
+
+```bash
+export LOGDIR=logs/call_test_period/stress_$(date +%Y%m%d_%H%M%S) && mkdir -p "$LOGDIR" && \
+./sipp 10.18.1.132:5060 \
+  -sf scenarios/ims_call_uac.xml \
+  -inf config/uac_users.csv \
+  -i 10.18.2.59 -p 20000 -mp 60000 -t un \
+  -r 100 -l 2000 -nd -aa -max_socket 4000 \
+  -set call_hold_time 10000 \
+  -fd 1 -timeout 200 \
+  -recv_timeout 15000 \
+  -m 2000 \
+  -trace_screen -screen_file "$LOGDIR/uac_screen.log" -screen_overwrite false \
+  -trace_err   -error_file  "$LOGDIR/uac_errors.log" -error_overwrite false
+```
+
 ### 关键参数说明
 
 | 参数 | 含义 |
