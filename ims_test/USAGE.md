@@ -153,25 +153,25 @@ tail -n +2 config/uas_users.csv >> /tmp/uac_10000.csv
 
 ## 3. 呼叫测试（UAC ↔ UAS）
 
-UAS 先起（被叫侧），UAC 后起（主叫侧）。日志固定写入 `logs/call_test/`，每次覆盖。
+UAS 先起（被叫侧），UAC 后起（主叫侧）。每条命令自带 `LOGDIR` 初始化，可直接复制执行。
 
 ### UAS（被叫，先起）
 
 ```bash
-mkdir -p logs/call_test && \
+export LOGDIR=logs/call_test_period/custom_test_$(date +%Y%m%d_%H%M%S) && mkdir -p "$LOGDIR" && \
 ./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_call_uas.xml \
   -oocsf scenarios/ims_default_response.xml \
   -inf config/uas_users.csv \
   -i 10.18.2.59 -p 10000 -mp 50000 -t un \
   -r 1 -l 1 -timeout 100 -recv_timeout 15000 -nd -fd 1 -max_socket 4000 \
-  -trace_screen -screen_file "logs/call_test/uas_screen.log" -screen_overwrite true
+  -trace_screen -screen_file "$LOGDIR/uas_screen.log" -screen_overwrite false
 ```
 
 ### UAC（主叫，后起）
 
 ```bash
-mkdir -p logs/call_test && \
+export LOGDIR=logs/call_test_period/custom_test_$(date +%Y%m%d_%H%M%S) && mkdir -p "$LOGDIR" && \
 ./sipp 10.18.1.132:5060 \
   -sf scenarios/ims_call_uac.xml \
   -inf config/uac_users.csv \
@@ -181,43 +181,8 @@ mkdir -p logs/call_test && \
   -fd 1 -timeout 100 \
   -recv_timeout 15000 \
   -m 1 \
-  -trace_screen -screen_file "logs/call_test/uac_screen.log" -screen_overwrite true \
-  -trace_err   -error_file  "logs/call_test/uac_errors.log" -error_overwrite true
-```
-
-### 2000 用户压测（rate=50）
-
-> 注册完成后等待 30s 再发起呼叫（已改 `ims_call_uac.xml` 中 pause 为 30000ms）。
-> timeout 需足够长：注册 20s + 等待 30s + 通话 10s + 余量 ≈ 200s。
-
-**UAS（先起）**
-
-```bash
-mkdir -p logs/call_test && \
-./sipp 10.18.1.132:5060 \
-  -sf scenarios/ims_call_uas.xml \
-  -oocsf scenarios/ims_default_response.xml \
-  -inf config/uas_users.csv \
-  -i 10.18.2.59 -p 10000 -mp 50000 -t un \
-  -r 100 -l 2000 -timeout 300 -recv_timeout 15000 -nd -fd 1 -max_socket 4000 \
-  -trace_screen -screen_file "logs/call_test/uas_screen.log" -screen_overwrite true
-```
-
-**UAC（后起）**
-
-```bash
-mkdir -p logs/call_test && \
-./sipp 10.18.1.132:5060 \
-  -sf scenarios/ims_call_uac.xml \
-  -inf config/uac_users.csv \
-  -i 10.18.2.59 -p 20000 -mp 60000 -t un \
-  -r 100 -l 2000 -nd -aa -max_socket 4000 \
-  -set call_hold_time 10000 \
-  -fd 1 -timeout 200 \
-  -recv_timeout 15000 \
-  -m 2000 \
-  -trace_screen -screen_file "logs/call_test/uac_screen.log" -screen_overwrite true \
-  -trace_err   -error_file  "logs/call_test/uac_errors.log" -error_overwrite true
+  -trace_screen -screen_file "$LOGDIR/uac_screen.log" -screen_overwrite false \
+  -trace_err   -error_file  "$LOGDIR/uac_errors.log" -error_overwrite false
 ```
 
 ### 关键参数说明
@@ -231,7 +196,7 @@ mkdir -p logs/call_test && \
 | `-fd 1`  | 日志刷新间隔 1s |
 | `-nd`    | 关闭默认行为（不自动回 200 到计划外请求） |
 | `-set call_hold_time 10000` | 通话保持 10s 后挂断 |
-| `-m   2000` | 总共发起 2000 通呼叫 |
+| `-m 2000` | 总共发起 2000 通呼叫 |
 | `-recv_timeout 15000` | 15s 未收到预期响应即失败 |
 | `-max_socket 4000` | 最大并发 socket |
 
